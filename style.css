@@ -1,0 +1,132 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: url('assets/fundo1.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+ /* GRID ____________________________________*/  
+
+.item1 { grid-area: header; 
+}
+.item2 { grid-area: title; }
+.item3 { grid-area: about; }
+.item4 { 
+  grid-area: scratch;
+  display: inline-block;
+  position: relative;
+  padding: 0px !important;
+  margin-right: 20%;
+}
+.ite{ grid-area: rows; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'rows rows'
+    'title scratch'
+    'about scratch';
+  grid-gap: 10px;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+}
+
+.grid-container > div {
+  /*background-color: rgba(255, 255, 255, 0.8*/
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* IMAGES ____________________________________*/
+
+.logo{
+  width: 25%;
+  height: 100%;
+  margin-left: 20px;
+  float: left;
+}
+
+.title{
+  width: 50%;
+  height: auto;
+}
+
+.scratch{
+  width: 100%;
+}
+
+.text-about{
+  width: 50%;
+  margin-top: 5%;
+  height: auto;
+}
+
+.link-linkedin{
+  width: 20%;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  z-index: 99;
+  cursor: auto;
+}
+
+.img-linkedin{
+  width: 100%;
+}
+
+.link-gmail{
+  width: 20%;
+  position: absolute;
+  left: 60%;
+  top: 20%;
+  z-index: 99;
+  cursor: auto;
+}
+
+.img-gmail{
+  width: 100%;
+}
+
+.link-behance{
+  width: 20%;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  z-index: 99;
+  cursor: auto;
+}
+
+.img-behance{
+  width: 100%;
+}
+
+.link-github{
+  width: 20%;
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  z-index: 99;
+  cursor: auto;
+}
+
+.img-github{
+  width: 100%;
+}
+
+
